@@ -103,9 +103,20 @@ header .logo{
     width: 100%; 
     height: 100%;
     border: 1px solid red;
-    background-color: rgba(255, 45, 209, 0.8);
-    /* filter: blur(1px); */
-    z-index: 1;
+}
+
+#blur{
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    background-color:rgba(255, 45, 209, 0.9);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px); 
+    filter: blur(5px);
 }
 
 .pop-up-hide{
@@ -119,9 +130,10 @@ header .logo{
     top: 25%;
     display: flex;
     justify-content: center;
-    background-color: rgb(95, 0, 247);
+    background-color: rgb(1, 255, 234);
     border: 1px solid red;
     margin: 0 auto;
+    z-index: 100;
 }
 
 .pop-up-form{
@@ -143,7 +155,7 @@ header .logo{
 
 .footer{
     width: 100%;
-    height: 400px;
+    height: 200px;
     background-color: rgb(0, 0, 0);
     color: white; 
 }

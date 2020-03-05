@@ -57,6 +57,7 @@ class Popup {
     constructor(name){
         this.name = name
         this.structure = `<div class="pop-up">
+            <div id="blur"></div>
              <div class="pop-up-content">
              <form class="pop-up-form" id="pop-up-form" action="">
                  ${this.name}
